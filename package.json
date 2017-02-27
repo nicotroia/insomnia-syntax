@@ -1,5 +1,7 @@
 {
   "name": "insomnia-syntax",
+  "author": "Nico Troia",
+  "homepage": "https://github.com/nicotroia/insomnia-syntax",
   "theme": "syntax",
   "version": "1.0.0",
   "private": false,
