@@ -1,11 +1,11 @@
 {
-  "name": "template-syntax",
+  "name": "insomnia-syntax",
   "theme": "syntax",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "private": false,
-  "description": "A template syntax theme to build from",
-  "repository": "https://github.com/atom/template-syntax",
-  "license": "MIT",
+  "description": "Based off 1337 from Sublime. Clean, relaxed and easy to read. For late night coding.",
+  "repository": "https://github.com/nicotroia/insomnia-syntax.git",
+  "license": "WTFPL",
   "engines": {
     "atom": ">0.50.0"
   }

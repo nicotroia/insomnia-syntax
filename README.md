@@ -1,17 +1,9 @@
-# Atom Template Syntax Theme
+# Insomnia Theme for Atom
 
-This is a template syntax theme. Its goal is to be an example or template for
-you to build from. See the less files in the `stylesheets` directory.
+Inspired by the 1337 tmTheme from Sublime. Clean, relaxed and easy to read. For late night coding.
 
-Feel free to fork this and create your own atom themes.
+## Credits
 
-![A screenshot!](https://f.cloud.github.com/assets/69169/2302417/fec4d2e4-a17b-11e3-927e-b4e375d3e26c.png)
+Project forked from [Atom/template-syntax](https://github.com/atom/template-syntax).
 
-### Notes and best practices
-
-* Name your syntax theme with `-syntax` at the end
-* Define proper colors in your `syntax-variables.less` file. Other packages
-  can use these variables. All the variables defined in this package's
-  `syntax-variables.less` file must be defined &mdash; you cannot pick and choose.
-* Always have a high-quality screenshot in the README
-* The `colors.less` file is not necessary, but it's good practice.
+Made by [Nico](http://nicotroia.com).
