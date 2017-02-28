@@ -11,19 +11,17 @@
 @syntax-background-color: @background;
 
 // Guide colors
-@syntax-wrap-guide-color: @dark-gray;
+@syntax-wrap-guide-color: @background;
 @syntax-indent-guide-color: @gray;
-@syntax-invisible-character-color: @gray;
+@syntax-invisible-character-color: @comment;
 
 // For find and replace markers
 @syntax-result-marker-color: @light-gray;
-@syntax-result-marker-color-selected: white;
+@syntax-result-marker-color-selected: @find;
 
 // Gutter colors
-@syntax-gutter-text-color: @very-light-gray;
-@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: @dark-gray;
-@syntax-gutter-background-color-selected: @gray;
+@syntax-gutter-text-color: @foreground;
+@syntax-gutter-text-color-selected: @caret;
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;

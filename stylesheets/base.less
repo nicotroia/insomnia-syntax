@@ -22,12 +22,12 @@
   }
 
   .gutter {
-    background-color: @syntax-gutter-background-color;
+    background-color: @background-2;
     color: @syntax-gutter-text-color;
 
     .line-number {
       &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
+        background-color: @selection;
         color: @syntax-gutter-text-color-selected;
       }
 
@@ -35,16 +35,21 @@
         color: @syntax-gutter-text-color-selected;
       }
     }
+
+    // Padding between gutter and scroll-view
+    .custom-decorations {
+      background-color: @background !important;
+    }
   }
 
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @string;
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @comment;
   }
 
   .cursor {
@@ -96,6 +101,16 @@
 /* var, const, class */
 .storage {
   color: @string;
+
+  /* js export */
+  &.modifier {
+    color: @keyword;
+  }
+
+  // Flow :Array<string>
+  &.type {
+    color: @variable;
+  }
 }
 
 .constant {
@@ -116,6 +131,15 @@
   &.other.symbol {
     color: @keyword;
   }
+
+}
+
+.brace {
+  color: @foreground;
+}
+
+.js-label {
+  color: @function-argument;
 }
 
 .variable {
@@ -126,8 +150,17 @@
   }
 
   &.parameter.function {
-    color: @function-argument;
+    color: @keyword;
   }
+
+  // &.readwrite {
+  //   color: @class-name;
+  // }
+
+  /* Flow type annotations */
+  // &.other {
+  //   color: @constant;
+  // }
 }
 
 .invalid.illegal {
@@ -135,9 +168,9 @@
   color: @string;
 }
 
+/* Includes json */
 .string {
   color: @string;
-
 
   &.regexp {
     color: @number;
@@ -152,17 +185,25 @@
   }
 }
 
+.source {
+
+  > .readwrite {
+    color: @class-name;
+  }
+
+}
+
 .punctuation {
   &.definition {
     &.comment {
-      color: @foreground;
+      color: @comment;
     }
 
     &.string,
     &.variable,
     &.parameters,
     &.array {
-      color: @foreground;
+      color: @string;
     }
 
     &.heading,
@@ -182,7 +223,7 @@
   }
 
   &.section.embedded {
-    color: @foreground;
+    color: @string;
   }
 
 }
@@ -217,7 +258,7 @@
   }
 
   &.name.tag {
-    color: @foreground;
+    color: @string;
     text-decoration: none !important; // underline
   }
 
@@ -249,12 +290,12 @@
 
   &.separator {
     background-color: @gray;
-    color: @syntax-text-color;
+    color: @foreground;
   }
 }
 
 .none {
-  color: @syntax-text-color;
+  color: @foreground;
 }
 
 .markup {
